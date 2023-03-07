@@ -2,7 +2,7 @@
   "name": "game",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/RomaSamkov/game-js#readme",
+  "homepage": "https://github.com/RomaSamkov/game-js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/*.html",
