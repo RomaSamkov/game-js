@@ -2,7 +2,6 @@
   "name": "game",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "homepage": "https://github.com/RomaSamkov/game-js#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
