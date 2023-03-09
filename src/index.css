@@ -1,11 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 #canvas1{
     background: url('./images/background.png');
+    /* max-width: 1110px;
+    max-height: 720px; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -13,8 +15,15 @@
 }
 
 #overlay{
+    /* max-width: 1110px;
+    max-height: 7200px; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+#obstacles{
+    display: none;
 }
