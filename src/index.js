@@ -52,6 +52,12 @@ window.addEventListener('load', function () {
       }
       this.collisionX += this.speedX * this.speedModifier;
       this.collisionY += this.speedY * this.speedModifier;
+      // collision with obstacles
+      this.game.obstacles.forEach(obstacle => {
+        if (this.game.checkCollision(this, obstacle)) {
+          console.log('collision');
+        }
+      });
     }
   }
 
