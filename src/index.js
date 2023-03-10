@@ -136,6 +136,13 @@ window.addEventListener('load', function () {
       this.player.update();
       this.obstacles.forEach(obstacle => obstacle.draw(context));
     }
+    checkCollision(a, b) {
+      const dx = a.collisionX - b.collisionX;
+      const dy = a.collisionY - b.collisionY;
+      const distance = Math.hypot(dy, dx);
+      const sumOfRadii = a.collisionRadius + b.collisionRadius;
+      return distance < sumOfRadii;
+    }
     init() {
       let attempts = 0;
       while (this.obstacles.length < this.numberOfObstacles && attempts < 500) {
