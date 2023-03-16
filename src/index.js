@@ -450,6 +450,13 @@ window.addEventListener('load', function () {
       } else {
         this.eggTimer += deltaTime;
       }
+      context.save();
+      context.textAlign = 'left';
+      context.fillText('Score : ' + this.score, 25, 85);
+      if (this.debug) {
+        context.fillText('Lost : ' + this.lostHatchlings, 25, 130);
+      }
+      context.restore();
     }
 
     checkCollision(a, b) {
