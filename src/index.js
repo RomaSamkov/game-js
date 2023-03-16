@@ -430,7 +430,7 @@ window.addEventListener('load', function () {
       this.width = this.canvas.width;
       this.height = this.canvas.height;
       this.topMargin = 260;
-      this.debug = false;
+      this.debug = true;
       this.player = new Player(this);
       this.fps = 70;
       this.timer = 0;
