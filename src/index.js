@@ -319,7 +319,12 @@ window.addEventListener('load', function () {
           this.game.lostHatchlings++;
           for (let i = 0; i < 3; i++) {
             this.game.particles.push(
-              new Spark(this.game, this.collisionX, this.collisionY, 'blue')
+              new Spark(
+                this.game,
+                this.collisionX,
+                this.collisionY,
+                'lightgreen'
+              )
             );
           }
         }
