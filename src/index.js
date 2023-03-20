@@ -303,7 +303,7 @@ window.addEventListener('load', function () {
         this.markedForDeletion = true;
         this.game.removeGameObjects();
         if (!this.game.gameOver) this.game.score++;
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 6; i++) {
           this.game.particles.push(
             new Firefly(this.game, this.collisionX, this.collisionY, 'yellow')
           );
@@ -329,7 +329,7 @@ window.addEventListener('load', function () {
           this.markedForDeletion = true;
           this.game.removeGameObjects();
           this.game.lostHatchlings++;
-          for (let i = 0; i < 3; i++) {
+          for (let i = 0; i < 6; i++) {
             this.game.particles.push(
               new Spark(
                 this.game,
@@ -486,7 +486,7 @@ window.addEventListener('load', function () {
       this.interval = 1000 / this.fps;
       this.eggTimer = 0;
       this.eggInterval = 1000;
-      this.numberOfObstacles = 8;
+      this.numberOfObstacles = 6;
       this.maxEggs = 10;
       this.obstacles = [];
       this.eggs = [];
